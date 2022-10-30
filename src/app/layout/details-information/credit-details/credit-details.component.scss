@@ -1,0 +1,64 @@
+.app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    padding: 30px;
+}
+
+.thirdMenuDesktop {
+    height: 70px;
+    background-color: beige;
+    margin-top: 30px;
+}
+
+.detailsInfopanel {
+    height: 210px;
+    background-color: #494949;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 40px;
+    color: white;
+}
+
+.detailsInfopanel rowDown {
+    margin-top: 20px;
+}
+
+.lowRow {
+    margin-top: 30px;
+}
+
+.actionsBlock {
+    margin-top: 30px;
+}
+
+.paymentHistory {
+    margin-top: 30px;
+}
+
+.detailsInfopanel p {
+    color: #a7a7a7;
+}
+
+.detailsInfopanel span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h2 {
+    padding: 10px;
+    font-weight: 400;
+}
+
+.dashboardCard {
+    margin: 5% 3%;
+    padding: 10px;
+    text-align: center;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 80px;
+}

@@ -1,0 +1,77 @@
+<mat-drawer-container class="app-container">
+    <div class="container">
+        <div class="thirdMenuDesktop">
+
+        </div>
+        <div class="detailsInfopanel">
+            <div class="hiRow">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <p>Общая сумма кредита</p>
+                            <span>{{creditDetails.debtAmount}} {{creditDetails.account_currency}}</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p>Карта</p>
+                            <span>{{creditDetails.card_number}}</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p>Тип кредита</p>
+                            <span>{{creditDetails.tariffName}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lowRow">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <p>Истекает</p>
+                            <span>{{creditDetails.expiry}}</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p>Сумма платежа</p>
+                            <span>{{creditDetails.schedulePaymentAmount}} {{creditDetails.account_currency}}</span>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <div class="actionsBlock">
+            <div class="actionsHeader">
+                <h2 class="dashboardTitle">Actions</h2>
+
+            </div>
+            <div class="actions">
+                <div class="row">
+                    <div class="col">
+                        <div class="dashboardCard">
+                            <p>Card 1</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dashboardCard">
+                            <p>Card 2</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dashboardCard">
+                            <p>Card 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paymentHistory">
+            <h2 class="dashboardTitle">Payment history</h2>
+
+        </div>
+    </div>
+</mat-drawer-container>

@@ -1,0 +1,102 @@
+<mat-drawer-container class="app-container">
+    <div class="container">
+        <div class="thirdMenuDesktop">
+
+        </div>
+        <div class="detailsInfopanel">
+            <div class="hiRow">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <p>Общая стоимость в рублях</p>
+                            <span>{{commonValue | number : '.2-2'}} {{currency}}</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            <p>За все время</p>
+                            <span [ngStyle]="{'color': getColor(expectedYield)}">{{expectedYield | number: '.2-2'}} %</span>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+            <div class="lowRow">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <!-- <p>Истекает</p>
+                            <span>4</span> -->
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+        <div class="actionsBlock">
+            <div class="actionsHeader">
+                <h2 class="dashboardTitle">Actions</h2>
+
+            </div>
+            <div class="actions">
+                <div class="row">
+                    <div class="col">
+                        <div class="dashboardCard">
+                            <p>Card 1</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dashboardCard">
+                            <p>Card 2</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dashboardCard">
+                            <p>Card 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paymentHistory">
+            <h2 class="dashboardTitle">Stocks</h2>
+            <ul class="list list-inline" *ngFor="let stock of stocks">
+                <li class="d-flex">
+                    <div class="d-flex">
+                        <div class="profile-image">
+                            <img class="rounded-circle" src="https://i.imgur.com/xbxOs06.jpg" width="30">
+                        </div>
+                        <div class="ml-2">
+                            <h4 class="mb-0">{{ stock.figi }}</h4>
+                            <div class="d-flex">
+                                <div>
+                                    <span class="ml-2">GOOGL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prices">
+                        <span>
+                            {{stock.averagePositionPrice.value}} {{stock.averagePositionPrice.currency}}
+                            <mat-icon class="mat-icon">arrow_forward</mat-icon> 
+                            {{stock.currentPrice.value}} {{stock.currentPrice.currency}}</span>
+                        <span>{{stock.currentPrice.value * stock.quantity | number : '1.2'}} {{stock.currentPrice.currency}}</span>
+                        <span [ngStyle]="{'color': getColor(stock.expectedYield)}">{{stock.expectedYield | number: '.2-2'}} {{stock.currentPrice.currency}}</span>
+                    </div>
+                </li>
+            </ul>
+                <!-- <mat-list-option *ngFor="let stock of stocks" [value]="stock">
+                    <div>
+                    </div>
+                  {{stock.figi}}
+                </mat-list-option> -->
+        </div>
+    </div>
+</mat-drawer-container>

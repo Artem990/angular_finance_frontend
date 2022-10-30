@@ -1,0 +1,131 @@
+.app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    padding: 30px;
+    // overflow: hidden; /* Hide scrollbars */
+}
+
+.thirdMenuDesktop {
+    height: 70px;
+    background-color: beige;
+    margin-top: 30px;
+}
+
+.detailsInfopanel {
+    height: 210px;
+    background-color: #494949;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 40px;
+    color: white;
+}
+
+.detailsInfopanel rowDown {
+    margin-top: 20px;
+}
+
+.lowRow {
+    margin-top: 30px;
+}
+
+.actionsBlock {
+    margin-top: 30px;
+}
+
+.paymentHistory {
+    margin-top: 30px;
+}
+
+.detailsInfopanel p {
+    color: #a7a7a7;
+}
+
+.detailsInfopanel span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h2 {
+    padding: 10px;
+    font-weight: 400;
+}
+
+.dashboardCard {
+    margin: 5% 3%;
+    padding: 10px;
+    text-align: center;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 80px;
+}
+
+.detailsInfopanel span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    min-width: 400px;
+}
+
+.prices span {
+    padding: 0 30px;
+}
+
+
+
+.icons i {
+    color: #b5b3b3;
+    border: 1px solid #b5b3b3;
+    padding: 6px;
+    margin-left: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .activity-done {
+    font-weight: 600;
+  }
+  
+  .list-group li {
+    margin-bottom: 12px;
+  }
+
+  .list li {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #e3dada;
+    margin-top: 12px;
+    border-radius: 7px;
+    background: #fff;
+  }
+
+  .list li:hover {
+      cursor: pointer;
+      transform: scale(1.001);
+      box-shadow: 0 1px 5px 2px rgba(51, 51, 51, 0.18);
+  }
+
+  
+  .profile-image img {
+    margin-left: 3px;
+  }
+
+  .icon {
+    font-size: 13px;
+}
+
+.mat-icon {
+    font-size: 15px;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+<div class="sidebar">
+    <h2 class="dashboardTitle">Accounts and cards</h2>
+    <ul>
+        <li *ngFor="let credit of creditList">
+            <a (click)="creditDetailsSubmit(credit.id)">{{ credit.loanName }}</a>
+        </li>
+        <li *ngFor="let investment of investmentList">
+            <a (click)="portfolioSubmit(investment.id)">{{ investment.name }}</a>
+        </li>
+    </ul>
+</div>
